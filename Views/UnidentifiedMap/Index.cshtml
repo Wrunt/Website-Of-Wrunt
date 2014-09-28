@@ -1,0 +1,274 @@
+﻿@using WruntsTools.Models
+@model WruntsTools.Models.MapAffixModel
+@{
+    ViewBag.Title = "Unidentified Maps";
+}
+
+
+
+<h2>Unidentified Map Planner</h2>
+
+<div>
+    <table class="basicInfo">
+        <tr>
+            <td colspan="2">Unidentified map rarity&nbsp;</td>
+            <td>@Html.DropDownListFor(m => m.Rarity, Model.GetRarityList(), new { @id = "Rarity", @class="property" })</td>
+        </tr>
+        <tr>
+            <td colspan="2">Unidentified map quality&nbsp;</td>
+            <td>@Html.TextBoxFor(m => m.Quality, new { @id = "Quality", @class = "property", @style = "text-align: right;" })</td>
+        </tr>
+        <tr>
+            <td colspan="2">Bonuses from Zana&nbsp;</td>
+            <td>@Html.TextBoxFor(m => m.Bonuses, new { @id = "Bonuses", @class = "property", @style = "text-align: right;" })</td>
+        </tr>
+        <tr>
+            <td colspan="2">Map Total Quantity (as seen in map)&nbsp;</td>
+            <td>@Html.TextBoxFor(m => m.Quantity, new { @id = "Quantity", @class = "property", @style = "text-align: right;" })</td>
+        </tr>
+    </table>
+    <table class="basicRequired">
+        <tr><td><br /></td></tr>
+        <tr>
+            <td colspan="9">Check for the following on loading in:</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Blood Magic&nbsp;</td>
+            <td>@Html.CheckBox("of Hemomancy", Model.HasAffix("of Hemomancy"), new { @id = "cbBlood", @class = "VisibleAffects" })</td>
+            <td class="rightText">Minus Max&nbsp;</td>
+            <td>@Html.CheckBox("of Exposure", Model.HasAffix("of Exposure"), new { @id = "cbMinusMax", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Temp Chains&nbsp;</td>
+            <td>@Html.CheckBox("of Temporal Chains", Model.HasAffix("of Temporal Chains"), new { @id = "cbTemp", @class = "VisibleAffects" })</td>
+            <td class="rightText">Ele Weakness&nbsp;</td>
+            <td>@Html.CheckBox("of Elemental Weakness", Model.HasAffix("of Elemental Weakness"), new { @id = "cbEle", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Vulnerability&nbsp;</td>
+            <td>@Html.CheckBox("of Vulnerability", Model.HasAffix("of Vulnerability"), new { @id = "cbVuln", @class = "VisibleAffects" })</td>
+            <td class="rightText">Enfeeblement&nbsp;</td>
+            <td>@Html.CheckBox("of Enfeeblement", Model.HasAffix("of Enfeeblement"), new { @id = "cbEnf", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">No Regen&nbsp;</td>
+            <td>@Html.CheckBox("of Stasis", Model.HasAffix("of Stasis"), new { @id = "cbSta", @class = "VisibleAffects" })</td>
+            <td class="rightText">50% Regen&nbsp;</td>
+            <td>@Html.CheckBox("of Smothering", Model.HasAffix("of Smothering"), new { @id = "cbSmo", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Ice Ground&nbsp;</td>
+            <td>@Html.CheckBox("of Ice", Model.HasAffix("of Ice"), new { @id = "cbIce", @class = "VisibleAffects" })</td>
+            <td class="rightText">Lightning Ground&nbsp;</td>
+            <td>@Html.CheckBox("of Lightning", Model.HasAffix("of Lightning"), new { @id = "cbLig", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Flaming Ground&nbsp;</td>
+            <td>@Html.CheckBox("of Flames", Model.HasAffix("of Flames"), new { @id = "cbFla", @class = "VisibleAffects" })</td>
+            <td class="rightText">Desecrated Ground&nbsp;</td>
+            <td>@Html.CheckBox("of Desecration", new { @id = "cbDes", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr><td><br /></td></tr>
+        <tr><td colspan="9">Notice any of the following while adventuring?</td></tr>
+        <tr>
+            <td></td>
+            <td class="rightText">2 Exiles (beware of false positives)&nbsp;</td>
+            <td>@Html.CheckBox("Anarchic", Model.HasAffix("Anarchic"), new { @id = "cbAna", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;All rares have Nemesis&nbsp;</td>
+            <td>@Html.CheckBox("Antagonist's", Model.HasAffix("Antagonist's"), new { @id = "cbNem", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">All Humanoids&nbsp;</td>
+            <td>@Html.CheckBox("Bipedal", Model.HasAffix("Bipedal"), new { @id = "cbBip", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Goats, Goats EVERYWHERE&nbsp;</td>
+            <td>@Html.CheckBox("Capricious", Model.HasAffix("Capricious"), new { @id = "cbCap", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">So many totems&nbsp;</td>
+            <td>@Html.CheckBox("Ceremonial", Model.HasAffix("Ceremonial"), new { @id = "cbCer", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Demons&nbsp;</td>
+            <td>@Html.CheckBox("Demonic", Model.HasAffix("Demonic"), new { @id = "cbDem", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Area inhabited by ranged&nbsp;</td>
+            <td>@Html.CheckBox("Emanant", Model.HasAffix("Emanant"), new { @id = "cbEma", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Animals&nbsp;</td>
+            <td>@Html.CheckBox("Feral", Model.HasAffix("Feral"), new { @id = "cbFer", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Curses don't work&nbsp;</td>
+            <td>@Html.CheckBox("Hexproof", Model.HasAffix("Hexproof"), new { @id = "cbHex", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Two bosses&nbsp;</td>
+            <td>@Html.CheckBox("Twinned", Model.HasAffix("Twinned"), new { @id = "cbTwi", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Undead&nbsp;</td>
+            <td>@Html.CheckBox("Undead", Model.HasAffix("Undead"), new { @id = "cbUnd", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Skeletons&nbsp;</td>
+            <td>@Html.CheckBox("Skeletal", Model.HasAffix("Skeletal"), new { @id = "cbSke", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Sea Witches&nbsp;</td>
+            <td>@Html.CheckBox("Slithering", Model.HasAffix("Slithering"), new { @id = "cbSli", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Multiple Projectiles&nbsp;</td>
+            <td>@Html.CheckBox("Splitting", Model.HasAffix("Splitting"), new { @id = "cbSpl", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Endurance Charges&nbsp;</td>
+            <td>@Html.CheckBox("of Endurance", Model.HasAffix("of Endurance"), new { @id = "cbEnd", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Frenzy Charges&nbsp;</td>
+            <td>@Html.CheckBox("of Frenzy", Model.HasAffix("of Frenzy"), new { @id = "cbFre", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Power Charges&nbsp;</td>
+            <td>@Html.CheckBox("of Power", Model.HasAffix("of Power"), new { @id = "cbPow", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Fracturing&nbsp;</td>
+            <td>@Html.CheckBox("of Fracturing", Model.HasAffix("of Fracturing"), new { @id = "cbFra", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="rightText">Ele Reflect&nbsp;</td>
+            <td>@Html.CheckBox("Mirrored", Model.HasAffix("Mirrored"), new { @id = "cbMir", @class = "VisibleAffects" })</td>
+            <td class="rightText">&nbsp;&nbsp;Phys Reflect&nbsp;</td>
+            <td>@Html.CheckBox("Punishing", Model.HasAffix("Punishing"), new { @id = "cbPun", @class = "VisibleAffects" })</td>
+        </tr>
+        <tr><td><br /></td></tr>
+    </table>
+    <div class="basicRequired">
+        <label id="remQua" style="display:none;">Remaining Quantity: </label>
+        <br />
+    </div>
+    <div class="basicRequired" id="results">
+        <table>
+            <tr>
+                <td class="resultCell"><div id="prefixes"></div></td>
+                <td class="resultCell"><div id="suffixes"></div></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".VisibleAffects").change(function () {
+        var path;
+        if ($(this).is(":checked")) {
+            path = "/UnidentifiedMap/AddAffix";
+        } else {
+            path = "/UnidentifiedMap/RemoveAffix";
+        }
+        $.ajax({
+            type: "POST",
+            url: path,
+            data: { affixName : $(this).attr('name') },
+            success: function (response) {
+                UpdateAffixList();
+                UpdateQuantity(response.Quantity);
+            }
+        });
+    });
+
+    $('.property').change(function () {
+        var data = {
+            PropName: $(this).attr('id'),
+            Value: $(this).val()
+        };
+        $.ajax({
+            type: "POST",
+            url: "/UnidentifiedMap/UpdateProperty",
+            data: data,
+            success: function (response) {
+                UpdateQuantity(response.Quantity);
+            }
+        })
+    });
+
+    function UpdateQuantity(quan) {
+        if (quan != null) {
+            $('#remQua').text("Remaining Quantity: " + quan);
+            $('#remQua').show();
+        } else {
+            $('#remQua').hide();
+            $('#remQua').text("Remaining Quantity: ");
+        }
+    }
+
+    var prefixes = [];
+    var suffixes = [];
+
+    function UpdateAffixList() {
+        prefixes.length = 0;
+        suffixes.length = 0;
+
+        $.ajax({
+            type: "GET",
+            url: "/UnidentifiedMap/GetPossibleAffixes",
+            success: function (response) {
+                $('#prefixes').empty();
+                $('#prefixes').hide();
+                $('#suffixes').empty();
+                $('#suffixes').hide();
+                for (var i = 0; i < response.length; i++) {
+                    if (response[i].Type == "Prefix") {
+                        prefixes.push(response[i]);
+                    } else {
+                        suffixes.push(response[i]);
+                    }
+                }
+
+                var toAppend;
+
+                if (prefixes.length > 0) {
+                    var prefixInfo = null;
+                    prefixInfo = prefixes.length == 1 ? "<label class=\"resultText\">Possible prefix:</label>" : "<label class=\"resultText\">Possible prefixes</label>";
+                    for (var i = 0; i < prefixes.length; i++) {
+                        prefixInfo = prefixInfo + "<br /><label class=\"resultText\">&nbsp;&nbsp;" + prefixes[i].Name + ": " + prefixes[i].PropertyLst[0] + ": " + prefixes[i].Quantity + "%</label>";
+                    }
+                    $('#prefixes').append(prefixInfo);
+                    $('#prefixes').show();
+                }
+
+                if (suffixes.length > 0) {
+                    var suffixInfo = null;
+                    suffixInfo = suffixes.length == 1 ? "<label class=\"resultText\">Possible suffix:</label>" : "<label class=\"resultText\">Possible suffixes</label>";
+                    for (var i = 0; i < suffixes.length; i++) {
+                        suffixInfo = suffixInfo + "<br /><label class=\"resultText\">&nbsp;&nbsp;" + suffixes[i].Name + ": " + suffixes[i].PropertyLst[0] + ": " + suffixes[i].Quantity + "%</label>";
+                    }
+                    $('#suffixes').append(suffixInfo);
+                    $('#suffixes').show();
+                }
+            }
+        })
+    }
+
+    $('.basicInfo').find('input').focusout(function () {
+        if ($('.basicInfo').find('input[type=text]').filter(function () { return $(this).val().length == 0; }).length < 1) {
+            $('.basicRequired').show();
+            UpdateAffixList();
+        } else {
+            $('.basicRequired').hide();
+        }
+    });
+
+    $(document).ready(function () {
+        if ($('.basicInfo').find('input[type=text]').filter(function () { return $(this).val().length == 0; }).length < 1) {
+            $('.basicRequired').show();
+            UpdateAffixList();
+        } else {
+            $('.basicRequired').hide();
+        }
+    });
+</script>

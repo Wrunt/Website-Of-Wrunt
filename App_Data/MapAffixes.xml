@@ -1,0 +1,311 @@
+﻿<Affixes>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Anarchic </Name>
+    <Property>Area is inhabited by 2 additional Rogue Exiles </Property>
+    <Quantity>15</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Antagonist's </Name>
+    <Property>Rare Monsters each have a Nemesis mod </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Armoured </Name>
+    <Property>30% Monster Physical Resistance </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Bipedal</Name>
+    <Property>Area is inhabited by Humanoids </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Burning </Name>
+    <Property>Monsters deal 80 to 100% extra Damage as Fire </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Capricious </Name>
+    <Property>Area is inhabited by Goatmen </Property>
+    <Quantity>16</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Ceremonial </Name>
+    <Property>Area contains many Totems </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Chaining</Name>
+    <Property>Monsters' Skills Chain 2 additional times </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Deadly </Name>
+    <Property>25 to 35% increased Monster Damage </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Demonic</Name>
+    <Property>Area is inhabited by Demons </Property>
+    <Quantity>15</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Emanant </Name>
+    <Property>Area is inhabited by ranged monsters </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Fecund </Name>
+    <Property>25 to 35% increased Monster Life </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Feral</Name>
+    <Property>Area is inhabited by Animals</Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Fleet </Name>
+    <Property>25 to 35% increased Monster Movement Speed</Property>
+    <Property>25 to 35% increased Monster Attack Speed</Property>
+    <Property>25 to 35% increased Monster Cast Speed </Property>
+    <Quantity>23</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Freezing </Name>
+    <Property>Monsters deal 80 to 100% extra Damage as Cold </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Grounded </Name>
+    <Property>+75% Monster Lightning Resistance </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Hexproof</Name>
+    <Property>Monsters are immune to Curses </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Incombustible </Name>
+    <Property>+75% Monster Fire Resistance </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Mirrored </Name>
+    <Property>Monsters reflect 18% of Elemental Damage </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Molten </Name>
+    <Property>+75% Monster Cold Resistance </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Multifarious </Name>
+    <Property>Area has increased monster variety </Property>
+    <Quantity>6</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Overlord's </Name>
+    <Property>Unique Boss deals +30% Damage</Property>
+    <Property>Unique Boss attacks 25% faster </Property>
+    <Quantity>11</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Punishing </Name>
+    <Property>Monsters reflect 18% of Physical Damage </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Shocking </Name>
+    <Property>Monsters deal 80 to 100% extra Damage as Lightning </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Skeletal </Name>
+    <Property>Area is inhabited by Skeletons </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Slithering </Name>
+    <Property>Area is inhabited by Sea Witches and their Spawn </Property>
+    <Quantity>0</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Splitting </Name>
+    <Property>Monsters fire 2 to 4 additional Projectiles </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Twinned </Name>
+    <Property>Area contains two Unique Bosses </Property>
+    <Quantity>6</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Undead </Name>
+    <Property>Area is inhabited by Undead </Property>
+    <Quantity>8</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Prefix</Type>
+    <Name>Unwavering </Name>
+    <Property>Monsters cannot be Stunned </Property>
+    <Quantity>12</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Balance </Name>
+    <Property>Players have Elemental Equilibrium </Property>
+    <Quantity>9</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Champions </Name>
+    <Property>20 to 50% more Magic Monsters </Property>
+    <Quantity>3</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Commanders </Name>
+    <Property>20 to 50% more Rare Monsters </Property>
+    <Quantity>3</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Desecration </Name>
+    <Property>Area has patches of desecrated ground </Property>
+    <Quantity>11</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Elemental Weakness </Name>
+    <Property>Players are cursed with Elemental Weakness </Property>
+    <Quantity>17</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Endurance </Name>
+    <Property>Monsters gain x Endurance Charges every 20 seconds </Property>
+    <Quantity>15</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Enfeeblement </Name>
+    <Property>Players are cursed with Enfeeble </Property>
+    <Quantity>18</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Exposure</Name>
+    <Property>-15 to 25% maximum Player Resistances </Property>
+    <Quantity>30</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Flames </Name>
+    <Property>Area has patches of burning ground </Property>
+    <Quantity>11</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Frenzy </Name>
+    <Property>Monsters gain 1 to 3 Frenzy Charges every 20 seconds </Property>
+    <Quantity>15</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Fracturing </Name>
+    <Property>Monsters Fracture </Property>
+    <Quantity>30</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Hemomancy </Name>
+    <Property>Players have Blood Magic </Property>
+    <Quantity>25</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Hordes</Name>
+    <Property>+20 to 50% Monster pack size </Property>
+    <Quantity>0</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Ice</Name>
+    <Property>Area has patches of chilled ground </Property>
+    <Quantity>11</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Lightning</Name>
+    <Property>Area has patches of shocked ground </Property>
+    <Quantity>11</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Power </Name>
+    <Property>Monsters gain 1 to 3 Power Charges every 20 seconds </Property>
+    <Quantity>15</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Smothering </Name>
+    <Property>Players recover Life Mana and Energy Shield 50% slower </Property>
+    <Quantity>20</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Stasis </Name>
+    <Property>Players cannot regenerate Life or Mana </Property>
+    <Quantity>30</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Temporal Chains </Name>
+    <Property>Players are cursed with Temporal Chains </Property>
+    <Quantity>27</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Venom </Name>
+    <Property>Monsters Poison on Hit </Property>
+    <Quantity>16</Quantity>
+  </Affix>
+  <Affix>
+    <Type>Suffix</Type>
+    <Name>of Vulnerability </Name>
+    <Property>Players are cursed with Vulnerability </Property>
+    <Quantity>25</Quantity>
+  </Affix>
+</Affixes>
